@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANGLE Skate Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ANGLE Skate Shop</h1>
+        <p>Skate the angles, live the ride!</p>
+    </header>
+    
+    <section class="products">
+        <h2>Наши товары</h2>
+        <div class="product-grid" id="product-grid">
+            <!-- Товары будут добавлены здесь с помощью JavaScript -->
+        </div>
+    </section>
+
+    
+    <section class="sponsors">
+        <h2>Наши спонсоры</h2>
+        <div class="sponsor-logos">
+            <img src="images/nike.png" alt="Nike">
+            <img src="images/adidas.png" alt="Adidas">
+            <img src="images/erased.png" alt="ERASED">
+            <img src="images/cariuma.png" alt="Cariuma">
+            <img src="images/lakai.png" alt="Lakai">
+        </div>
+    </section>
+
+    <footer>
+        <h2>Свяжитесь с нами</h2>
+        <form id="contact-form">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+        <div id="map"> <!-- Карта будет здесь -->
+            <h2>Найдите нас здесь</h2>
+            <p>123 Skate Street, Skate City, SK 12345</p>
+        </div>
+    </footer>
+
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-button">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="">
+            <p id="modal-description"></p>
+            <p>Цена: <span id="modal-price"></span> руб.</p>
+            <button id="add-to-cart">Добавить в корзину</button>
+            <button id="remove-from-cart" style="display: none;">Убрать из корзины</button>
+        </div>
+    </div>
+
+    <div id="cart">
+        <h2>Корзина</h2>
+        <ul id="cart-items"></ul>
+        <p>Общая сумма: <span id="total-price">0</span> руб.</p>
+        <a href="cart.html"><button>Перейти к корзине</button></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

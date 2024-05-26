@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа - ANGLE Skate Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ANGLE Skate Shop</h1>
+        <p>Skate the angles, live the ride!</p>
+    </header>
+
+    <section class="checkout">
+        <h2>Оформление заказа</h2>
+        <form id="checkout-form">
+            <label for="customer-name">Имя:</label>
+            <input type="text" id="customer-name" name="customer-name" required>
+            <label for="customer-address">Адрес:</label>
+            <input type="text" id="customer-address" name="customer-address" required>
+            <label for="customer-phone">Номер телефона:</label>
+            <input type="tel" id="customer-phone" name="customer-phone" required>
+            <div class="order-summary">
+                <h3>Итоговая сумма:</h3>
+                <p id="order-total"></p>
+                <p>Доставка: 499 руб.</p>
+                <p id="final-total"></p>
+            </div>
+            <button type="submit">Подтвердить заказ</button>
+        </form>
+    </section>
+
+    <footer>
+        <h2>Свяжитесь с нами</h2>
+        <form id="contact-form">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+        <div id="map"> <!-- Карта будет здесь -->
+            <h2>Найдите нас здесь</h2>
+            <p>123 Skate Street, Skate City, SK 12345</p>
+        </div>
+    </footer>
+
+    <!-- Подключение JavaScript для обработки заказа -->
+    <script src="checkout.js"></script>
+</body>
+</html>
