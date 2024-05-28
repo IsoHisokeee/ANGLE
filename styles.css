@@ -36,6 +36,8 @@ header p {
 
 .product {
     background-color: white;
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -46,6 +48,7 @@ header p {
 .product img {
     max-width: 100%;
     border-radius: 8px;
+    margin-bottom: auto;
 }
 
 button {
