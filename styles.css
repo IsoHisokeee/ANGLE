@@ -109,6 +109,8 @@ footer form button {
 }
 
 .modal-content {
+    display:flex;
+    flex-direction: column;
     background-color: white;
     margin: 10% auto;
     padding: 20px;
